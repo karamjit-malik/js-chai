@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM learning</title>
+    <style>
+        body
+        {
+            background-color: #212121;
+            color:#fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-black">
+        <h1 class="heading" id="title">Chai</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+    </div>
+    <ul>
+        <li class="list">hello</li>
+        <li class="list">hi</li>
+        <li class="list">hanji</li>
+    </ul>
+    <script>
+        const temp = document.getElementsByClassName('list');
+        const t = Array.from(temp);
+        t.forEach((l)=>l.style.color = 'red')
+    </script>
+</body>
+</html>
